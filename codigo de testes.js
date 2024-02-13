@@ -16,3 +16,5 @@ setTimeout(function(){
     console.log(mostraHora())
     console.log("teste")
 }, 5000);
+
+// comment
