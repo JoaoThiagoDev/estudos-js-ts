@@ -1,4 +1,9 @@
-const nomes = ['João', 'Rafael', 'Thiago', 'Victor', 'Fernando'];
+/*
+ UTILIZAÇÃO DO MÉTODO:
+ array.splice(indexMudar, qtdItensContinuar, ...elementosAdd)
+*/
+
+const nomes = ['João', 'Rafael', 'Thiago', 'Victor', 'Fernando', 'Kerlon', 'Kezia', 'Luan', 'Davi', 'Larissa', 'Carlos', 'Matheus', 'Abner'];
 
 // simulando unshift
 nomes.splice(0, 0, 'Unshift');

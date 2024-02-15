@@ -1,3 +1,17 @@
+/**
+ * Para que serve:
+ * filter vai retornar os elementos que satisfaçam a condição passada na função
+ * 
+ * UTILIZAÇÃO:
+ * array.filter(function callBack que vai retornar true ou false)
+ * 
+ * Com ARROW FUNCTION fica mais legível!
+ * array.filter( el => funcionalidade );
+ * 
+ * OBS: ele não vai modificar o array, então é necessário um novo array para receber o array que satisfaz a condição
+ */
+
+
 
 // OBJ: retornar novos numeros maiores que 10
 const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
