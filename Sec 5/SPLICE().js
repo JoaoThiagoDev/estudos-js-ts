@@ -14,4 +14,4 @@ console.log("Push", nomes);
 
 // simulando pop
 nomes.splice(-1, 1);
-console.log("Pop:", nomes)
+console.log("Pop:", nomes);
