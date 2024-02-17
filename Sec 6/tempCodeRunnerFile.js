@@ -1,0 +1,1 @@
+this.preco * (porcentagem / 100)

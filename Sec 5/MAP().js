@@ -19,7 +19,7 @@ console.log("numerosEmDobro", numerosEmDobro);
 
 // DOBRE OS NUMEROS MAIORES QUE 10
 const numerosDobroMaiorQueDez = numeros.map(el => el > 10 ? el * 2 : el);
-console.log("numerosDobroMaiorQueDez", numerosDobroMaiorQueDez)
+console.log("numerosDobroMaiorQueDez", numerosDobroMaiorQueDez);
 
 
 
