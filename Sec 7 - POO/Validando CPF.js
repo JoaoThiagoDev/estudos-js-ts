@@ -53,7 +53,6 @@ class CPF {
         cpfArray = cpfArray.toString().replace(/\D+/g, '');
 
         return cpfArray;
-
     };
 
 
