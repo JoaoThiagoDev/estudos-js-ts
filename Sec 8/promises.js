@@ -39,3 +39,24 @@ Promise.all(promises)
     })
 */
 
+
+// PROMISE.RESOLVE()
+
+function baixaPagina() {
+    const emCache = true; // simulando um servidor que diz se está em chache ou nao
+
+    if (emCache) {
+        return Promise.resolve('Página já estava baixada')
+    } else {
+        let tempo = tempoAleatorio(1, 5);
+        return simulaConexao(`Página baixada com sucesso. Levou ${tempo / 1000}s`, tempo)
+    }
+
+}
+
+baixaPagina()
+    .then(dadosPagina => console.log(dadosPagina))
+    .catch((err) => console.log(err));
+
+    // # # # # # # # # # # # # # # # # # # # # # # 
+    // A função Promise.reject() será a mesma coisa, porém ao invés de considerar a promise completa, vai a rejeitar. Ou seja, vai fazer cair direto no CATCH da função.
