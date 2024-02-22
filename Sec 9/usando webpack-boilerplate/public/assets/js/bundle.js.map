@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":";;;;;AAAAA,KAAK,CAAC,MAAM,CAAC,C","sources":["webpack://usando-webpack-boilerplate/./src/index.js"],"sourcesContent":["alert(\"Aloo\")"],"names":["alert"],"sourceRoot":""}
