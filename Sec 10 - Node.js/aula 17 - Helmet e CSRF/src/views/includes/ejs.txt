@@ -1,0 +1,5 @@
+<% funções js (if else, for etc...) %>
+<%= mostra todos os caracteres %>
+<%- mostra certos e executa os devidos caracteres %>
+<%# comentario %>
+<%- include('CAMINHO/ARQUIVO'); %>

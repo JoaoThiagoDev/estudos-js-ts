@@ -1,0 +1,29 @@
+<%- include('includes/header')%>
+
+<!-- CONTEUDO DA PAGINA ABAIXO! -->
+
+    <section class="container">
+      <h1>
+
+        <% if(typeof titulo !== 'undefined') { %>
+        <!-- <%= titulo %> <br> <%# ESSE SIMBOLO DE IGUAL (=) VAI MOSTRAR TODOS OS CARACTERES %> -->
+        <%- titulo %> <%# O SIMBOLO DE MENOS (-) VAI EXECUTAR COMO HTML/JS MESMO %>
+        <% } else { %>
+          Titulo não enviado!
+        <% } %>
+
+      </h1>
+
+      <p>
+        <%= umaVariavelLocal %>
+      </p>
+
+      <p>
+        <% numeros.forEach(num => {%>
+          <%= num %> <br>
+        <%}); %>
+      </p>
+    </section>
+
+
+<%- include('includes/footer') %>

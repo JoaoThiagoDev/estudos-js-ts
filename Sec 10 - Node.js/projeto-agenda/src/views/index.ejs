@@ -1,0 +1,25 @@
+<%- include('includes/header')%>
+
+<!-- CONTEUDO DA PAGINA ABAIXO! -->
+
+<section class="container">
+  <h1>
+
+    <% if(typeof titulo !== 'undefined') { %>
+    <!-- <%= titulo %> <br> <%# ESSE SIMBOLO DE IGUAL (=) VAI MOSTRAR TODOS OS CARACTERES %> -->
+    <%- titulo %> <%# O SIMBOLO DE MENOS (-) VAI EXECUTAR COMO HTML/JS MESMO %>
+    <% } else { %>
+    Titulo não enviado!
+    <% } %>
+
+  </h1>
+
+  <form action="/" method="post">
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+    <label>Cliente</label>
+    <input type="text" name="cliente">
+    <button>Submit</button>
+  </form>
+</section>
+
+<%- include('includes/footer') %>
