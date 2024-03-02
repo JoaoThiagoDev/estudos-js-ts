@@ -1,25 +1,36 @@
-<%- include('includes/header')%>
+<%- include('./includes/header') %>
+<%- include('./includes/nav') %>
 
-<!-- CONTEUDO DA PAGINA ABAIXO! -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-2">
 
-<section class="container">
-  <h1>
+    </div>
 
-    <% if(typeof titulo !== 'undefined') { %>
-    <!-- <%= titulo %> <br> <%# ESSE SIMBOLO DE IGUAL (=) VAI MOSTRAR TODOS OS CARACTERES %> -->
-    <%- titulo %> <%# O SIMBOLO DE MENOS (-) VAI EXECUTAR COMO HTML/JS MESMO %>
-    <% } else { %>
-    Titulo não enviado!
-    <% } %>
+    <div class="col-lg-8 my-3">
+      <h1 class="display-1 text-center">Agenda</h1>
+      <p class="text-center lead">Contatos:</p>
 
-  </h1>
+      
 
-  <form action="/" method="post">
-    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-    <label>Cliente</label>
-    <input type="text" name="cliente">
-    <button>Submit</button>
-  </form>
-</section>
+      <div class="responsive-table">
+        <table class="table my-3">
+          <tr>
+            <td>Fulano</td>
+            <td>da Silva</td>
+            <td>19 982389438</td>
+            <td>fulano@gmail.com</td>
+          </tr>
 
-<%- include('includes/footer') %>
+        </table>
+      </div>
+
+    </div>
+
+    <div class="col-lg-2">
+
+    </div>
+  </div>
+</div>
+
+<%- include('./includes/footer') %>
