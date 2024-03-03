@@ -1,0 +1,29 @@
+<%- include('./includes/header') %>
+<%- include('./includes/nav') %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-2">
+
+    </div>
+
+    <div class="col-lg-8 my-4">
+      <%- include('includes/messages'); %>
+      <h1 class="text-center">Oops...</h1>
+      <p class="text-center lead my-3">Você já está logado <strong>(<%= user.email %>)</strong>!<br>
+        Para continuar, volte para a tela inicial ou saia para criar outra conta.</p>
+
+      <div class="text-center">
+        <a href="/">
+          <button type="button" class="btn btn-primary btn-lg">Voltar</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-lg-2">
+
+    </div>
+  </div>
+</div>
+
+<%- include('./includes/footer') %>
