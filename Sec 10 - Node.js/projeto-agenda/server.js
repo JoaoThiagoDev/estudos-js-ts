@@ -26,6 +26,7 @@ const csrf = require('csurf');  // tokens temporários para a segurança
 const { middlewareGlobal, checkCSRFError, CSRFMiddleware } = require('./src/middlewares/middleware') // middlewares
 
 app.use(helmet());
+app.use(helmet.referrerPolicy({ policy: ["origin", "unsafe-url"] }));
 app.use(express.urlencoded({ extended: true }));  // nos autoriza a postar formularios p/ dentro de nossa aplicação
 app.use(express.json());  // permite a fazer parse de JSON na aplicação
 app.use(express.static(path.resolve(__dirname, 'public')));  // arquivos estáticos (imgs, css, etc)
