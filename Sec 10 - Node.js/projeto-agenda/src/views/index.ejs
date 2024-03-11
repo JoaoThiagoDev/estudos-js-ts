@@ -16,7 +16,12 @@
       <div class="responsive-table">
         <table class="table my-3">
 
-          <% if (contatos.length > 0) { %>
+          <% if (!(contatos.length > 0)) { %>
+          <div class="alert alert-danger" role="alert">
+            Nenhum contato na agenda! Cadastre algum para vê-lo.
+          </div>
+
+          <% } else{ %>
           <% contatos.forEach(contato => { %>
 
           <tr>
@@ -30,11 +35,6 @@
           </tr>
 
           <% }) %>
-
-          <% } else{ %>
-          <div class="alert alert-danger" role="alert">
-            Nenhum contato na agenda! Cadastre algum para vê-lo.
-          </div>
           <% } %>
         </table>
       </div>
