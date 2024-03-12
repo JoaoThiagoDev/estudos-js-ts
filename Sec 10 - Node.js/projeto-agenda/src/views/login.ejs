@@ -13,14 +13,16 @@
 
       <%- include('includes/messages'); %>
 
+      <div class="row errosDiv"></div>
+      
       <div class="row">
 
-        <div class="col-lg">
+        <div class="col-lg my-3">
 
           <h4>Faça seu cadastro</h4>
           <p>Se você ainda não tem conta, preencha os campos abaixo:</p>
 
-          <form action="/login/register" method="POST">
+          <form class="form-register" action="/login/register" method="POST">
             <input type="hidden" name="_csrf" value="<%= csrfToken %>">
             <div class="form-group">
               <label>Seu e-mail</label>
@@ -39,12 +41,12 @@
 
         </div>
 
-        <div class="col-lg">
+        <div class="col-lg my-3">
           <h4>Fazer login</h4>
 
           <p>Se você já tem conta, faça login abaixo:</p><br>
 
-          <form action="/login/login" method="POST">
+          <form class="form-login" action="/login/login" method="POST">
             <input type="hidden" name="_csrf" value="<%= csrfToken %>">
             <div class="form-group">
               <label>Seu e-mail</label>
