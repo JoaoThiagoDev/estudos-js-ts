@@ -1,11 +1,11 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import Main from "./components/Main";
+import "./App.css";
 
 function App() {
   return (
     <>
-      <h1>Olá mundo!</h1>
-      <p>Lorem</p>
+      <Main />
     </>
   );
 }

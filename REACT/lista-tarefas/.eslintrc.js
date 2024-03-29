@@ -32,6 +32,7 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 'off',
     'requireConfigFile': false,
+    'react/jsx-key': 'off',
   },
 };
 
