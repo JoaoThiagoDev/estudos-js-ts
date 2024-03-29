@@ -31,8 +31,9 @@ module.exports = {
   },
   rules: {
     'react/react-in-jsx-scope': 'off',
-    'requireConfigFile': false,
+    'requireConfigFile': 'off',
     'react/jsx-key': 'off',
+    'react/forbid-prop-types': 'off',
   },
 };
 
