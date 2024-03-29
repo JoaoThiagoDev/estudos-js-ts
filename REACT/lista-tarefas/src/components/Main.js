@@ -15,12 +15,28 @@ export default class Main extends Component {
     index: -1,
   };
 
+  componentDidMount() {
+    const tarefas = JSON.parse(localStorage.getItem("tarefas"));
+
+    if (!tarefas) return;
+
+    this.setState({ tarefas });
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    const { tarefas } = this.state;
+
+    if (tarefas === prevState.tarefas) return;
+
+    localStorage.setItem("tarefas", JSON.stringify(tarefas));
+  }
+
   handleDelete = (e, index) => {
     const { tarefas } = this.state;
-    tarefas.splice(index, 1);
-    this.setState({
-      tarefas: tarefas,
-    });
+    const novasTarefas = [...tarefas];
+    novasTarefas.splice(index, 1);
+
+    this.setState({ tarefas: [...novasTarefas] });
   };
 
   handleEdit = (e, index) => {
